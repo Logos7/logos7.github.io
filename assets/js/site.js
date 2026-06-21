@@ -1,26 +1,4 @@
-const header = document.querySelector(".site-header");
-const navToggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelector(".nav-links");
 const year = document.querySelector("[data-year]");
-
-const updateHeader = () => {
-  header?.classList.toggle("is-scrolled", window.scrollY > 16);
-};
-
-updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });
-
-navToggle?.addEventListener("click", () => {
-  const isOpen = navLinks?.classList.toggle("is-open");
-  navToggle.setAttribute("aria-expanded", String(Boolean(isOpen)));
-});
-
-navLinks?.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("is-open");
-    navToggle?.setAttribute("aria-expanded", "false");
-  });
-});
 
 if (year) {
   year.textContent = String(new Date().getFullYear());
