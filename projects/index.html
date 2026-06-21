@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Wybrane projekty Logos7.">
+  <meta name="description" content="Projekty Logos7 — kod, sprzęt, gry, filmy, galerie i archiwalne prace.">
   <meta name="theme-color" content="#07080b">
   <title>Projekty — Logos7</title>
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
@@ -31,20 +31,33 @@
     <div class="container reveal">
       <p class="eyebrow">Wybrane prace</p>
       <h1>Pro<span>jekty</span></h1>
-      <p>Systemy, gry i narzędzia, które warto pokazać szerzej. Nie każde przedsięwzięcie ma publiczne repozytorium — kod jest tylko jedną z możliwych form projektu.</p>
+      <p>Systemy, gry, obrazy, muzyka i eksperymenty. Projekt nie musi mieć publicznego kodu — może istnieć jako repozytorium, film, galeria, demo albo zachowane archiwum.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <div class="filter-row reveal" aria-label="Filtry projektów">
-        <span class="filter-chip is-active">Wszystkie</span>
-        <span class="filter-chip">FPGA</span>
-        <span class="filter-chip">Gry</span>
+      <div class="project-model reveal">
+        <div>
+          <p class="project-model-title">Jedna karta projektu, wiele możliwych źródeł</p>
+          <p>Portfolio porządkuje twórczość według dziedziny. Linki zewnętrzne są tylko materiałami towarzyszącymi.</p>
+        </div>
+        <div class="source-badges source-badges-large" aria-label="Obsługiwane rodzaje materiałów">
+          <span class="source-badge" data-source="github">GitHub</span>
+          <span class="source-badge" data-source="youtube">YouTube</span>
+          <span class="source-badge" data-source="gallery">Galeria</span>
+          <span class="source-badge" data-source="archive">Archiwum</span>
+        </div>
       </div>
 
-      <div class="projects-grid">
-        <a class="project-card reveal" href="/projects/yantra/">
+      <div class="filter-row reveal" aria-label="Filtry projektów">
+        <button class="filter-chip is-active" type="button" data-project-filter="all" aria-pressed="true">Wszystkie</button>
+        <button class="filter-chip" type="button" data-project-filter="technology" aria-pressed="false">Kod i sprzęt</button>
+        <button class="filter-chip" type="button" data-project-filter="games" aria-pressed="false">Gry</button>
+      </div>
+
+      <div class="projects-grid" data-projects-grid>
+        <a class="project-card reveal" href="/projects/yantra/" data-project-category="technology">
           <div class="project-card-media">
             <img src="/assets/projects/yantra-cover.svg" alt="Abstrakcyjna wizualizacja projektu Yantra">
           </div>
@@ -53,10 +66,11 @@
             <h3>Yantra</h3>
             <p>Modułowa, wyższopoziomowa platforma do budowania systemów FPGA z bloków i uruchamiania ich na różnych targetach.</p>
             <div class="tags"><span class="tag">FPGA</span><span class="tag">C#</span><span class="tag">Avalonia</span><span class="tag">Verilog</span></div>
+            <div class="source-badges" aria-label="Materiały projektu"><span class="source-badge" data-source="portfolio">Portfolio</span><span class="source-badge" data-source="github">GitHub</span></div>
           </div>
         </a>
 
-        <a class="project-card reveal" href="/projects/pieceborne/">
+        <a class="project-card reveal" href="/projects/pieceborne/" data-project-category="games">
           <div class="project-card-media">
             <img src="/assets/projects/pieceborne-cover.svg" alt="Stylizowana plansza gry Pieceborne">
           </div>
@@ -65,9 +79,11 @@
             <h3>Pieceborne</h3>
             <p>Strategiczno-logiczna gra 3D, w której drużyna figur przemierza komnaty, rozwiązuje zagadki i walczy o drogę dalej.</p>
             <div class="tags"><span class="tag">Gra</span><span class="tag">Godot</span><span class="tag">3D</span><span class="tag">Steam</span></div>
+            <div class="source-badges" aria-label="Materiały projektu"><span class="source-badge" data-source="portfolio">Portfolio</span><span class="source-badge" data-source="private">Projekt prywatny</span></div>
           </div>
         </a>
       </div>
+      <p class="projects-empty" data-projects-empty hidden>W tej kategorii nie ma jeszcze opublikowanych projektów.</p>
     </div>
   </section>
 </main>
