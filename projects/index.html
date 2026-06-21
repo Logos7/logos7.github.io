@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wybrane projekty Logos7.">
+  <meta name="theme-color" content="#07080b">
+  <title>Projekty — Logos7</title>
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="Logos7 — strona główna">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>LOGOS7</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Otwórz menu">☰</button>
+    <nav class="nav-links" aria-label="Główna nawigacja">
+      <a href="/">Główna</a>
+      <a aria-current="page" href="/projects/">Projekty</a>
+      <a href="https://github.com/Logos7" rel="noreferrer">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container reveal">
+      <p class="eyebrow">Wybrane prace</p>
+      <h1>Pro<span>jekty</span></h1>
+      <p>Systemy, gry i narzędzia, które warto pokazać szerzej. Nie każde przedsięwzięcie ma publiczne repozytorium — kod jest tylko jedną z możliwych form projektu.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-row reveal" aria-label="Filtry projektów">
+        <span class="filter-chip is-active">Wszystkie</span>
+        <span class="filter-chip">FPGA</span>
+        <span class="filter-chip">Gry</span>
+      </div>
+
+      <div class="projects-grid">
+        <a class="project-card reveal" href="/projects/yantra/">
+          <div class="project-card-media">
+            <img src="/assets/projects/yantra-cover.svg" alt="Abstrakcyjna wizualizacja projektu Yantra">
+          </div>
+          <div class="project-card-body">
+            <span class="status">Aktywny projekt</span>
+            <h3>Yantra</h3>
+            <p>Modułowa, wyższopoziomowa platforma do budowania systemów FPGA z bloków i uruchamiania ich na różnych targetach.</p>
+            <div class="tags"><span class="tag">FPGA</span><span class="tag">C#</span><span class="tag">Avalonia</span><span class="tag">Verilog</span></div>
+          </div>
+        </a>
+
+        <a class="project-card reveal" href="/projects/pieceborne/">
+          <div class="project-card-media">
+            <img src="/assets/projects/pieceborne-cover.svg" alt="Stylizowana plansza gry Pieceborne">
+          </div>
+          <div class="project-card-body">
+            <span class="status">W produkcji</span>
+            <h3>Pieceborne</h3>
+            <p>Strategiczno-logiczna gra 3D, w której drużyna figur przemierza komnaty, rozwiązuje zagadki i walczy o drogę dalej.</p>
+            <div class="tags"><span class="tag">Gra</span><span class="tag">Godot</span><span class="tag">3D</span><span class="tag">Steam</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span data-year></span> Logos7</div>
+    <div class="footer-links">
+      <a href="/projects/">Projekty</a>
+      <a href="https://github.com/Logos7" rel="noreferrer">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js"></script>
+</body>
+</html>
