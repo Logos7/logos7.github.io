@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yantra — modułowa platforma do projektowania systemów FPGA.">
+  <meta name="theme-color" content="#07080b">
+  <title>Yantra — Logos7</title>
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="Logos7 — strona główna">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>LOGOS7</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Otwórz menu">☰</button>
+    <nav class="nav-links" aria-label="Główna nawigacja">
+      <a href="/">Główna</a>
+      <a aria-current="page" href="/projects/">Projekty</a>
+      <a href="https://github.com/Logos7" rel="noreferrer">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="project-hero">
+    <div class="container project-hero-grid">
+      <div class="reveal">
+        <p class="eyebrow">FPGA · narzędzia · systemy</p>
+        <h1>Yan<span>tra</span></h1>
+        <p>Modułowa platforma do projektowania systemów FPGA z bloków — od prostych układów po procesory, grafikę, audio i eksperymentalne architektury.</p>
+        <div class="project-actions">
+          <a class="button button-primary" href="https://github.com/Logos7/Yantra" rel="noreferrer">Repozytorium GitHub →</a>
+          <a class="button" href="/projects/">Wszystkie projekty</a>
+        </div>
+      </div>
+      <div class="project-cover reveal">
+        <img src="/assets/projects/yantra-cover.svg" alt="Abstrakcyjna wizualizacja systemu Yantra">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container project-layout">
+      <article class="prose reveal">
+        <h2>Co to jest?</h2>
+        <p>Yantra jest próbą zbudowania środowiska, w którym układ sprzętowy można składać z modułów, parametryzować, łączyć i wdrażać na różne płytki FPGA bez ręcznego odtwarzania całego procesu od zera.</p>
+        <p>Projekt łączy graficzne edytory, generowanie kodu, obsługę targetów, narzędzia budowania oraz własne języki opisu. Kod HDL pozostaje ważny, ale nie musi być jedynym poziomem pracy.</p>
+
+        <h2>Kierunek</h2>
+        <ul>
+          <li>graficzne składanie systemów z bloków,</li>
+          <li>parametryzowane moduły i wiele targetów FPGA,</li>
+          <li>język Mantra kompilowany do Sutry,</li>
+          <li>obsługa procesorów, grafiki, audio i specjalizowanych koprocesorów,</li>
+          <li>projekty demonstracyjne pokazujące pełną drogę od idei do działającego sprzętu.</li>
+        </ul>
+
+        <div class="callout">
+          <strong>Idea:</strong> FPGA nie jako zbiór osobnych eksperymentów, lecz jako spójny ekosystem do budowania nowych maszyn.
+        </div>
+      </article>
+
+      <aside class="sidebar reveal">
+        <h3>Informacje</h3>
+        <div class="meta-list">
+          <div class="meta-item"><span class="meta-label">Status</span><span class="meta-value">Aktywny</span></div>
+          <div class="meta-item"><span class="meta-label">Dziedzina</span><span class="meta-value">FPGA / EDA / narzędzia</span></div>
+          <div class="meta-item"><span class="meta-label">Technologie</span><span class="meta-value">C#, Avalonia, Verilog</span></div>
+          <div class="meta-item"><span class="meta-label">Kod</span><span class="meta-value">Publiczne repozytorium</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>© <span data-year></span> Logos7</div>
+    <div class="footer-links">
+      <a href="/projects/">Projekty</a>
+      <a href="https://github.com/Logos7" rel="noreferrer">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js"></script>
+</body>
+</html>

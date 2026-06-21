@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090b10"/><stop offset=".55" stop-color="#111827"/><stop offset="1" stop-color="#241b3a"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#f0c66f" stop-opacity=".8"/><stop offset="1" stop-color="#f0c66f" stop-opacity="0"/></radialGradient>
+<filter id="b"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<g opacity=".22" stroke="#7fd8ff" stroke-width="2">
+<path d="M0 170H1600M0 340H1600M0 510H1600M0 680H1600M0 850H1600"/>
+<path d="M180 0V1000M360 0V1000M540 0V1000M720 0V1000M900 0V1000M1080 0V1000M1260 0V1000M1440 0V1000"/>
+</g>
+<circle cx="800" cy="500" r="360" fill="none" stroke="#f0c66f" stroke-opacity=".35" stroke-width="3"/>
+<circle cx="800" cy="500" r="250" fill="none" stroke="#a391ff" stroke-opacity=".42" stroke-width="3"/>
+<circle cx="800" cy="500" r="155" fill="url(#glow)" filter="url(#b)"/>
+<g fill="none" stroke-linecap="round">
+<path d="M295 505C430 265 595 745 800 500S1160 300 1305 500" stroke="#f0c66f" stroke-width="10"/>
+<path d="M340 640C500 820 620 270 800 500S1090 760 1280 360" stroke="#7fd8ff" stroke-width="7" opacity=".75"/>
+<path d="M515 250L800 500L1100 245M510 755L800 500L1110 760" stroke="#a391ff" stroke-width="5" opacity=".62"/>
+</g>
+<g fill="#f0c66f">
+<circle cx="295" cy="505" r="18"/><circle cx="800" cy="500" r="26"/><circle cx="1305" cy="500" r="18"/>
+</g>
+<g fill="#7fd8ff"><circle cx="340" cy="640" r="12"/><circle cx="1280" cy="360" r="12"/></g>
+<text x="800" y="890" text-anchor="middle" fill="#f5f1e8" font-family="Segoe UI, sans-serif" font-size="84" font-weight="700" letter-spacing="18">YANTRA</text>
+</svg>

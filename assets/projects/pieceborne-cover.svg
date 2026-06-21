@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071014"/><stop offset=".55" stop-color="#10231d"/><stop offset="1" stop-color="#2b1a12"/></linearGradient>
+<radialGradient id="fire"><stop stop-color="#fff2b6"/><stop offset=".25" stop-color="#f6a53c"/><stop offset=".58" stop-color="#d44b28" stop-opacity=".8"/><stop offset="1" stop-color="#d44b28" stop-opacity="0"/></radialGradient>
+<filter id="b"><feGaussianBlur stdDeviation="18"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/>
+<g transform="translate(800 590)">
+<ellipse rx="370" ry="110" fill="#000" opacity=".35"/>
+<circle r="175" fill="url(#fire)" filter="url(#b)"/>
+<path d="M-120 65L120-65M-120-65L120 65" stroke="#6c3d22" stroke-width="55" stroke-linecap="round"/>
+<path d="M0 80C-95 20-65-70-20-150C-5-80 40-70 45-140C120-40 85 50 0 80Z" fill="#ffb347"/>
+<path d="M0 70C-45 34-25-18 5-70C18-25 42-10 35-62C78-12 55 45 0 70Z" fill="#fff0a2"/>
+</g>
+<g fill="#e7eadf" stroke="#24342e" stroke-width="8">
+<path d="M425 670h160l-18 150H443z"/><circle cx="505" cy="575" r="72"/><path d="M461 520l44-110l44 110z"/>
+<path d="M1015 685h170l-15 135h-140z"/><path d="M1060 685v-115h80v115z"/><path d="M1040 570l60-100l60 100z"/>
+</g>
+<g opacity=".28" stroke="#95c9a9" stroke-width="2">
+<path d="M0 820H1600M0 900H1600"/><path d="M200 760V1000M400 760V1000M600 760V1000M800 760V1000M1000 760V1000M1200 760V1000M1400 760V1000"/>
+</g>
+<text x="800" y="170" text-anchor="middle" fill="#f5f1e8" font-family="Segoe UI, sans-serif" font-size="82" font-weight="700" letter-spacing="10">PIECEBORNE</text>
+</svg>
