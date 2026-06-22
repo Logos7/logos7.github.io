@@ -8,24 +8,178 @@
   <title>Logos7 — kod, sprzęt, sztuka</title>
   <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/site.css">
+  <style>
+    .hero-container {
+      display: grid;
+      gap: clamp(28px, 5vw, 64px);
+    }
+
+    .hero-symbol {
+      display: grid;
+      min-width: 0;
+      place-items: center;
+    }
+
+    .hero-symbol img {
+      display: block;
+      width: min(100%, 620px);
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      filter:
+        drop-shadow(0 0 32px rgba(42, 194, 126, 0.2))
+        drop-shadow(0 0 70px rgba(214, 165, 55, 0.12));
+    }
+
+    .hero-tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .hero-tile {
+      position: relative;
+      display: grid;
+      min-height: 150px;
+      padding: 24px;
+      color: inherit;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      background:
+        linear-gradient(
+          135deg,
+          rgba(42, 194, 126, 0.1),
+          rgba(214, 165, 55, 0.04)
+        );
+      overflow: hidden;
+      transition:
+        transform 180ms ease,
+        border-color 180ms ease,
+        background-color 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .hero-tile::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(
+          circle at top right,
+          rgba(42, 194, 126, 0.18),
+          transparent 55%
+        );
+      opacity: 0;
+      transition: opacity 180ms ease;
+    }
+
+    .hero-tile:hover {
+      transform: translateY(-4px);
+      border-color: rgba(42, 194, 126, 0.5);
+      box-shadow:
+        0 18px 50px rgba(0, 0, 0, 0.28),
+        0 0 30px rgba(42, 194, 126, 0.08);
+    }
+
+    .hero-tile:hover::before {
+      opacity: 1;
+    }
+
+    .hero-tile-content {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      align-content: space-between;
+      gap: 24px;
+    }
+
+    .hero-tile-title {
+      margin: 0;
+      font-size: clamp(1.3rem, 2vw, 1.65rem);
+    }
+
+    .hero-tile-description {
+      margin: 8px 0 0;
+      color: rgba(255, 255, 255, 0.66);
+      line-height: 1.5;
+    }
+
+    .hero-tile-arrow {
+      justify-self: end;
+      font-size: 1.5rem;
+      color: #2ac27e;
+      transition: transform 180ms ease;
+    }
+
+    .hero-tile:hover .hero-tile-arrow {
+      transform: translateX(5px);
+    }
+  </style>
 </head>
 <body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="Logos7 — strona główna">
+      <span class="brand-mark" aria-hidden="true"></span>
+    </a>
 
+    <nav class="nav-links" aria-label="Główna nawigacja">
+    </nav>
+  </div>
+</header>
 
 <main>
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="reveal">
-        <p class="eyebrow">Osobiste uniwersum twórcze</p>
-        <h1>LOGOS<span>7</span></h1>
-        <p class="hero-lead">Buduję systemy na styku programowania, sprzętu, matematyki, obrazu i muzyki.</p>
+    <div class="container hero-container">
+
+      <div class="hero-grid">
+        <div class="reveal">
+          <p class="eyebrow">Osobiste uniwersum twórcze</p>
+          <h1>LOGOS<span>7</span></h1>
+          <p class="hero-lead">Tworzę projekty łączące kod, sprzęt i sztukę.</p>
+        </div>
+
+        <div class="hero-symbol reveal" aria-hidden="true">
+          <img
+            src="/assets/images/logos7-universe-symbol.png"
+            alt=""
+            width="1254"
+            height="1254">
+        </div>
       </div>
-      <div class="orbit reveal" aria-hidden="true">
-        <div class="orbit-core"></div>
-        <span class="orbit-dot"></span>
-        <span class="orbit-dot"></span>
-        <span class="orbit-dot"></span>
+
+      <div class="hero-tiles reveal">
+
+        <a class="hero-tile" href="/projects/">
+          <div class="hero-tile-content">
+            <div>
+              <h2 class="hero-tile-title">Projekty</h2>
+              <p class="hero-tile-description">
+                Kod, FPGA, gry, grafika, muzyka i eksperymenty.
+              </p>
+            </div>
+            <span class="hero-tile-arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+
+        <a
+          class="hero-tile"
+          href="https://github.com/Logos7"
+          rel="noreferrer">
+          <div class="hero-tile-content">
+            <div>
+              <h2 class="hero-tile-title">GitHub</h2>
+              <p class="hero-tile-description">
+                Repozytoria, kod źródłowy i bieżące eksperymenty.
+              </p>
+            </div>
+            <span class="hero-tile-arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+
       </div>
+
     </div>
   </section>
 </main>
@@ -33,10 +187,6 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>© <span data-year></span> Logos7</div>
-    <div class="footer-links">
-      <a href="/projects/">Projekty</a>
-      <a href="https://github.com/Logos7" rel="noreferrer">GitHub</a>
-    </div>
   </div>
 </footer>
 
