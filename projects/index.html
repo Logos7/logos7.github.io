@@ -1,115 +1,112 @@
-<!doctype html>
-<html lang="pl">
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Projekty Logos7 — kod, sprzęt, gry, filmy, galerie i archiwalne prace.">
-  <meta name="theme-color" content="#07080b">
-  <title>Projekty — Logos7</title>
-  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/css/site.css">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Logos7 projects — code, hardware, games, films, galleries and archived work." data-i18n-attr="content:projects.meta" name="description"/>
+<meta content="#07080b" name="theme-color"/>
+<title data-i18n="projects.title">Projects — Logos7</title>
+<link href="/assets/icons/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/css/site.css" rel="stylesheet"/>
 </head>
-<body id="top">
-  <main>
-    <section class="page-hero">
-      <div class="container page-hero-container reveal">
-        <p class="eyebrow">Wybrane prace</p>
-        <div class="headline-symbol-row page-headline-symbol-row">
-          <h1>Pro<span>jekty</span></h1>
-          <div class="page-hero-symbol" aria-hidden="true">
-            <img src="/assets/images/projects-cosmic-symbol.png" alt="" width="1254" height="1254">
-          </div>
-        </div>
-        <p>Systemy, gry, obrazy, muzyka i eksperymenty na styku technologii i sztuki.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="filter-row reveal" aria-label="Filtry projektów">
-          <button class="filter-chip is-active" type="button" data-project-filter="all" aria-pressed="true">Wszystkie</button>
-          <button class="filter-chip" type="button" data-project-filter="technology" aria-pressed="false">Kod i sprzęt</button>
-          <button class="filter-chip" type="button" data-project-filter="games" aria-pressed="false">Gry</button>
-        </div>
-
-        <div class="projects-grid" data-projects-grid>
-          <article class="project-card reveal" data-project-category="technology">
-            <a class="project-card-media" href="/projects/yantra/">
-              <img src="/assets/projects/yantra-cover.svg" alt="Abstrakcyjna wizualizacja projektu Yantra">
-            </a>
-            <div class="project-card-body">
-              <span class="status">Aktywny projekt</span>
-              <div class="project-card-titlebar">
-                <h3><a href="/projects/yantra/">Yantra</a></h3>
-                <a class="project-card-repository" href="https://github.com/Logos7/Yantra" target="_blank" rel="noreferrer">GitHub ↗</a>
-              </div>
-              <p>Modułowa, wyższopoziomowa platforma do budowania systemów FPGA z bloków i uruchamiania ich na różnych targetach.</p>
-              <div class="tags">
-                <span class="tag">FPGA</span>
-                <span class="tag">C#</span>
-                <span class="tag">Avalonia</span>
-                <span class="tag">Verilog</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-project-category="games">
-            <a class="project-card-media" href="/projects/pieceborne/">
-              <img src="/assets/projects/pieceborne-cover.svg" alt="Stylizowana plansza gry Pieceborne">
-            </a>
-            <div class="project-card-body">
-              <span class="status">W produkcji</span>
-              <div class="project-card-titlebar">
-                <h3><a href="/projects/pieceborne/">Pieceborne</a></h3>
-                <span class="project-card-repository project-card-repository-private">Prywatne repo</span>
-              </div>
-              <p>Strategiczno-logiczna gra 3D, w której drużyna figur przemierza komnaty, rozwiązuje zagadki i walczy o drogę dalej.</p>
-              <div class="tags">
-                <span class="tag">Gra</span>
-                <span class="tag">Godot</span>
-                <span class="tag">3D</span>
-                <span class="tag">Steam</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-project-category="technology">
-            <a class="project-card-media project-card-art project-card-art-adi" href="/projects/adi/" aria-label="Adi — eksperymentalne systemy FPGA">
-              <span aria-hidden="true"></span>
-            </a>
-            <div class="project-card-body">
-              <span class="status status-experimental">Experimental</span>
-              <div class="project-card-titlebar">
-                <h3><a href="/projects/adi/">Adi</a></h3>
-                <a class="project-card-repository" href="https://github.com/Logos7/Adi" target="_blank" rel="noreferrer">GitHub ↗</a>
-              </div>
-              <p>Eksperymentalne laboratorium systemów FPGA: procesory, syntezatory, grafika sprzętowa, wyświetlacze i komunikacja z urządzeniami.</p>
-              <div class="tags">
-                <span class="tag">FPGA</span>
-                <span class="tag">Verilog</span>
-                <span class="tag">Audio</span>
-                <span class="tag">Graphics</span>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <p class="projects-empty" data-projects-empty hidden>W tej kategorii nie ma jeszcze opublikowanych projektów.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>© <span data-year></span> Logos7</div>
-      <nav class="footer-links" aria-label="Szybka nawigacja">
-        <a href="/">Home</a>
-        <a href="#top">Do góry ↑</a>
-        <a href="https://github.com/Logos7" target="_blank" rel="noreferrer">GitHub ↗</a>
-      </nav>
-    </div>
-  </footer>
-
-  <script src="/assets/js/site.js"></script>
+<body id="top"><div aria-label="Language" class="language-switcher" data-i18n-attr="aria-label:common.languageSelector" role="group">
+<button aria-pressed="true" class="language-button" data-language="en" title="English" type="button">EN</button>
+<button aria-pressed="false" class="language-button" data-language="pl" title="Polski" type="button">PL</button>
+</div>
+<main>
+<section class="page-hero">
+<div class="container page-hero-container reveal">
+<p class="eyebrow" data-i18n="projects.eyebrow">Selected work</p>
+<div class="headline-symbol-row page-headline-symbol-row">
+<h1 data-i18n-html="projects.headline">Pro<span>jects</span></h1>
+<div aria-hidden="true" class="page-hero-symbol">
+<img alt="" height="1254" src="/assets/images/projects-cosmic-symbol.png" width="1254"/>
+</div>
+</div>
+<p data-i18n="projects.lead">Systems, games, images, music and experiments at the intersection of technology and art.</p>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div aria-label="Project filters" class="filter-row reveal" data-i18n-attr="aria-label:projects.filtersLabel">
+<button aria-pressed="true" class="filter-chip is-active" data-i18n="projects.filterAll" data-project-filter="all" type="button">All</button>
+<button aria-pressed="false" class="filter-chip" data-i18n="projects.filterTechnology" data-project-filter="technology" type="button">Code and hardware</button>
+<button aria-pressed="false" class="filter-chip" data-i18n="projects.filterGames" data-project-filter="games" type="button">Games</button>
+</div>
+<div class="projects-grid" data-projects-grid="">
+<article class="project-card reveal" data-project-category="technology">
+<a class="project-card-media" href="/projects/yantra/">
+<img alt="Abstract visualization of the Yantra project" data-i18n-attr="alt:projects.yantraAlt" src="/assets/projects/yantra-cover.svg"/>
+</a>
+<div class="project-card-body">
+<span class="status" data-i18n="projects.yantraStatus">Active project</span>
+<div class="project-card-titlebar">
+<h3><a href="/projects/yantra/">Yantra</a></h3>
+<a class="project-card-repository" href="https://github.com/Logos7/Yantra" rel="noreferrer" target="_blank">GitHub ↗</a>
+</div>
+<p data-i18n="projects.yantraDescription">A modular, high-level platform for building FPGA systems from blocks and deploying them to different targets.</p>
+<div class="tags">
+<span class="tag">FPGA</span>
+<span class="tag">C#</span>
+<span class="tag">Avalonia</span>
+<span class="tag">Verilog</span>
+</div>
+</div>
+</article>
+<article class="project-card reveal" data-project-category="games">
+<a class="project-card-media" href="/projects/pieceborne/">
+<img alt="Stylized Pieceborne game board" data-i18n-attr="alt:projects.pieceborneAlt" src="/assets/projects/pieceborne-cover.svg"/>
+</a>
+<div class="project-card-body">
+<span class="status" data-i18n="projects.pieceborneStatus">In production</span>
+<div class="project-card-titlebar">
+<h3><a href="/projects/pieceborne/">Pieceborne</a></h3>
+<span class="project-card-repository project-card-repository-private" data-i18n="projects.privateRepository">Private repository</span>
+</div>
+<p data-i18n="projects.pieceborneDescription">A 3D strategy-puzzle game in which a team of pieces explores chambers, solves puzzles and fights its way forward.</p>
+<div class="tags">
+<span class="tag" data-i18n="projects.gameTag">Game</span>
+<span class="tag">Godot</span>
+<span class="tag">3D</span>
+<span class="tag">Steam</span>
+</div>
+</div>
+</article>
+<article class="project-card reveal" data-project-category="technology">
+<a aria-label="Adi — experimental FPGA systems" class="project-card-media project-card-art project-card-art-adi" data-i18n-attr="aria-label:projects.adiAria" href="/projects/adi/">
+<span aria-hidden="true"></span>
+</a>
+<div class="project-card-body">
+<span class="status status-experimental" data-i18n="projects.adiStatus">Experimental</span>
+<div class="project-card-titlebar">
+<h3><a href="/projects/adi/">Adi</a></h3>
+<a class="project-card-repository" href="https://github.com/Logos7/Adi" rel="noreferrer" target="_blank">GitHub ↗</a>
+</div>
+<p data-i18n="projects.adiDescription">An experimental FPGA systems laboratory: processors, synthesizers, hardware graphics, displays and device communication.</p>
+<div class="tags">
+<span class="tag">FPGA</span>
+<span class="tag">Verilog</span>
+<span class="tag">Audio</span>
+<span class="tag">Graphics</span>
+</div>
+</div>
+</article>
+</div>
+<p class="projects-empty" data-i18n="projects.empty" data-projects-empty="" hidden="">No published projects in this category yet.</p>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="container footer-grid">
+<div>© <span data-year=""></span> Logos7</div>
+<nav aria-label="Quick navigation" class="footer-links" data-i18n-attr="aria-label:common.quickNavigation">
+<a data-i18n="common.home" href="/">Home</a>
+<a data-i18n="common.backToTop" href="#top">Back to top ↑</a>
+<a data-i18n="common.github" href="https://github.com/Logos7" rel="noreferrer" target="_blank">GitHub ↗</a>
+</nav>
+</div>
+</footer>
+<script src="/assets/js/site.js"></script>
 </body>
 </html>
