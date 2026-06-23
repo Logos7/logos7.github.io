@@ -1,0 +1,82 @@
+html {
+  background: #06070a;
+}
+
+body {
+  background: transparent;
+}
+
+body::before,
+body::after {
+  display: none;
+}
+
+.ambient-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at calc(50% + var(--background-x, 0px)) calc(38% + var(--background-y, 0px)), rgba(163, 145, 255, .12), transparent 38rem),
+    linear-gradient(180deg, rgba(8, 9, 14, .78), rgba(5, 7, 10, .94));
+}
+
+.ambient-background::before,
+.ambient-background::after {
+  content: "";
+  position: absolute;
+  inset: -18%;
+  opacity: .7;
+  filter: blur(54px) saturate(1.28);
+  transform: translate3d(var(--background-x, 0px), var(--background-y, 0px), 0) scale(1.06);
+  transition: opacity .6s ease;
+}
+
+.ambient-background::before {
+  background:
+    radial-gradient(circle at 22% 24%, rgba(var(--background-primary, 126, 224, 175), .24), transparent 24%),
+    radial-gradient(circle at 76% 72%, rgba(var(--background-secondary, 163, 145, 255), .2), transparent 28%);
+}
+
+.ambient-background::after {
+  background:
+    radial-gradient(circle at 68% 18%, rgba(var(--background-accent, 240, 198, 111), .17), transparent 22%),
+    radial-gradient(circle at 34% 82%, rgba(var(--background-secondary, 163, 145, 255), .13), transparent 25%);
+  transform: translate3d(var(--background-x-reverse, 0px), var(--background-y-reverse, 0px), 0) scale(1.12);
+}
+
+.ambient-background canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .94;
+}
+
+.ambient-background-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(5, 6, 9, .08), rgba(5, 7, 10, .38)),
+    radial-gradient(ellipse at center, transparent 18%, rgba(4, 5, 8, .38) 100%);
+}
+
+@media (max-width: 720px) {
+  .ambient-background::before,
+  .ambient-background::after {
+    opacity: .58;
+    filter: blur(42px) saturate(1.18);
+  }
+
+  .ambient-background canvas {
+    opacity: .82;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-background::before,
+  .ambient-background::after {
+    transform: none;
+  }
+}
