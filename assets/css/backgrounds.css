@@ -80,3 +80,22 @@ body::after {
     transform: none;
   }
 }
+
+.background-cycle-trigger {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform .28s ease, opacity .28s ease;
+}
+
+.background-cycle-trigger:hover,
+.background-cycle-trigger:focus-visible {
+  transform: scale(1.035);
+  opacity: .96;
+  outline: none;
+}
+
+.background-cycle-trigger:active {
+  transform: scale(.985);
+}
