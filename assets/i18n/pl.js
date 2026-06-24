@@ -19,7 +19,7 @@ window.Logos7Translations.pl = {
   "home.meta": "Logos7 — kod, FPGA, gry, obrazy, muzyka i eksperymenty.",
   "home.title": "Logos7 — kod, sprzęt, sztuka",
   "home.eyebrow": "Osobiste uniwersum twórcze",
-  "home.lead": "Tworzę projekty łączące kod, sprzęt i sztukę.",
+  "home.lead": "Tworzę eksperymentalne systemy, symulatory i narzędzia łączące matematykę, sprzęt, programowanie, sztuczną inteligencję, grafikę i muzykę.",
   "home.projectsTitle": "Projekty",
   "home.projectsDescription": "Kod, FPGA, gry, grafika, muzyka i eksperymenty.",
   "home.githubDescription": "Repozytoria, kod źródłowy i bieżące eksperymenty.",
