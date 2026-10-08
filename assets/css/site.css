@@ -756,6 +756,38 @@ button {
   object-fit: cover;
 }
 
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-gallery figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.project-gallery a {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.project-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: var(--bg-soft);
+}
+
+.project-gallery figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
 .project-layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
@@ -946,6 +978,10 @@ button {
 }
 
 @media (max-width: 720px) {
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
 
   .language-switcher {
     top: max(10px, env(safe-area-inset-top));

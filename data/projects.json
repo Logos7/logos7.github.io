@@ -1,0 +1,527 @@
+{
+  "categories": [
+    {
+      "id": "technology",
+      "label": {
+        "en": "Code and hardware",
+        "pl": "Kod i sprzęt",
+        "de": "Code und Hardware",
+        "es": "Código y hardware"
+      }
+    },
+    {
+      "id": "games",
+      "label": {
+        "en": "Games",
+        "pl": "Gry",
+        "de": "Spiele",
+        "es": "Juegos"
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "yantra",
+      "name": "Yantra",
+      "category": "technology",
+      "status": {
+        "en": "Active project",
+        "pl": "Aktywny projekt",
+        "de": "Aktives Projekt",
+        "es": "Proyecto activo"
+      },
+      "description": {
+        "en": "A modular, high-level platform for building FPGA systems from blocks and deploying them to different targets.",
+        "pl": "Modułowa, wyższopoziomowa platforma do budowania systemów FPGA z bloków i uruchamiania ich na różnych targetach.",
+        "de": "Eine modulare High-Level-Plattform zum Aufbau von FPGA-Systemen aus Blöcken und zur Bereitstellung auf verschiedenen Zielplattformen.",
+        "es": "Una plataforma modular de alto nivel para construir sistemas FPGA a partir de bloques y desplegarlos en diferentes objetivos."
+      },
+      "eyebrow": {
+        "en": "FPGA · tools · systems",
+        "pl": "FPGA · narzędzia · systemy",
+        "de": "FPGA · Werkzeuge · Systeme",
+        "es": "FPGA · herramientas · sistemas"
+      },
+      "lead": {
+        "en": "A modular platform for designing FPGA systems from blocks — from simple circuits to processors, graphics, audio and experimental architectures.",
+        "pl": "Modułowa platforma do projektowania systemów FPGA z bloków — od prostych układów po procesory, grafikę, audio i eksperymentalne architektury.",
+        "de": "Eine modulare Plattform zum Entwerfen von FPGA-Systemen aus Blöcken — von einfachen Schaltungen bis zu Prozessoren, Grafik, Audio und experimentellen Architekturen.",
+        "es": "Una plataforma modular para diseñar sistemas FPGA a partir de bloques, desde circuitos sencillos hasta procesadores, gráficos, audio y arquitecturas experimentales."
+      },
+      "metaDescription": {
+        "en": "Yantra — a modular platform for designing FPGA systems.",
+        "pl": "Yantra — modułowa platforma do projektowania systemów FPGA.",
+        "de": "Yantra — eine modulare Plattform zum Entwerfen von FPGA-Systemen.",
+        "es": "Yantra — una plataforma modular para diseñar sistemas FPGA."
+      },
+      "repository": "https://github.com/Logos7/Yantra",
+      "cover": {
+        "src": "/assets/projects/yantra-cover.svg",
+        "alt": {
+          "en": "Abstract visualization of the Yantra system",
+          "pl": "Abstrakcyjna wizualizacja systemu Yantra",
+          "de": "Abstrakte Visualisierung des Yantra-Systems",
+          "es": "Visualización abstracta del sistema Yantra"
+        }
+      },
+      "tags": [
+        "FPGA",
+        "C#",
+        "Avalonia",
+        "Verilog"
+      ],
+      "sections": [
+        {
+          "title": {
+            "en": "What is it?",
+            "pl": "Co to jest?",
+            "de": "Was ist das?",
+            "es": "¿Qué es?"
+          },
+          "paragraphs": [
+            {
+              "en": "Yantra is an attempt to build an environment in which hardware systems can be assembled from modules, parameterized, connected and deployed to different FPGA boards without rebuilding the entire process manually from scratch.",
+              "pl": "Yantra jest próbą zbudowania środowiska, w którym układ sprzętowy można składać z modułów, parametryzować, łączyć i wdrażać na różne płytki FPGA bez ręcznego odtwarzania całego procesu od zera.",
+              "de": "Yantra ist der Versuch, eine Umgebung zu schaffen, in der Hardwaresysteme aus Modulen zusammengesetzt, parametrisiert, verbunden und auf verschiedenen FPGA-Boards bereitgestellt werden können, ohne den gesamten Prozess jedes Mal manuell neu aufzubauen.",
+              "es": "Yantra es un intento de crear un entorno en el que los sistemas de hardware puedan componerse a partir de módulos, parametrizarse, conectarse y desplegarse en distintas placas FPGA sin reconstruir manualmente todo el proceso desde cero."
+            },
+            {
+              "en": "The project combines graphical editors, code generation, target support, build tools and custom description languages. HDL remains important, but it does not have to be the only level of work.",
+              "pl": "Projekt łączy graficzne edytory, generowanie kodu, obsługę targetów, narzędzia budowania oraz własne języki opisu. Kod HDL pozostaje ważny, ale nie musi być jedynym poziomem pracy.",
+              "de": "Das Projekt verbindet grafische Editoren, Codegenerierung, Zielplattformunterstützung, Build-Werkzeuge und eigene Beschreibungssprachen. HDL bleibt wichtig, muss aber nicht die einzige Arbeitsebene sein.",
+              "es": "El proyecto combina editores gráficos, generación de código, soporte para objetivos, herramientas de compilación y lenguajes de descripción propios. HDL sigue siendo importante, pero no tiene por qué ser el único nivel de trabajo."
+            }
+          ],
+          "items": []
+        },
+        {
+          "title": {
+            "en": "Direction",
+            "pl": "Kierunek",
+            "de": "Ausrichtung",
+            "es": "Dirección"
+          },
+          "paragraphs": [],
+          "items": [
+            {
+              "en": "graphical composition of systems from blocks,",
+              "pl": "graficzne składanie systemów z bloków,",
+              "de": "grafisches Zusammensetzen von Systemen aus Blöcken,",
+              "es": "composición gráfica de sistemas a partir de bloques,"
+            },
+            {
+              "en": "parameterized modules and multiple FPGA targets,",
+              "pl": "parametryzowane moduły i wiele targetów FPGA,",
+              "de": "parametrisierte Module und mehrere FPGA-Zielplattformen,",
+              "es": "módulos parametrizados y múltiples objetivos FPGA,"
+            },
+            {
+              "en": "the Mantra language compiled to Sutra,",
+              "pl": "język Mantra kompilowany do Sutry,",
+              "de": "die Sprache Mantra, kompiliert nach Sutra,",
+              "es": "el lenguaje Mantra compilado a Sutra,"
+            },
+            {
+              "en": "support for processors, graphics, audio and specialized coprocessors,",
+              "pl": "obsługa procesorów, grafiki, audio i specjalizowanych koprocesorów,",
+              "de": "Unterstützung für Prozessoren, Grafik, Audio und spezialisierte Koprozessoren,",
+              "es": "soporte para procesadores, gráficos, audio y coprocesadores especializados,"
+            },
+            {
+              "en": "demonstration projects showing the full path from an idea to working hardware.",
+              "pl": "projekty demonstracyjne pokazujące pełną drogę od idei do działającego sprzętu.",
+              "de": "Demonstrationsprojekte, die den gesamten Weg von der Idee bis zur funktionierenden Hardware zeigen.",
+              "es": "proyectos de demostración que muestran todo el recorrido desde una idea hasta hardware funcional."
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "en": "Idea: FPGA not as a collection of separate experiments, but as a coherent ecosystem for building new machines.",
+        "pl": "Idea: FPGA nie jako zbiór osobnych eksperymentów, lecz jako spójny ekosystem do budowania nowych maszyn.",
+        "de": "Idee: FPGA nicht als Sammlung einzelner Experimente, sondern als zusammenhängendes Ökosystem zum Bau neuer Maschinen.",
+        "es": "Idea: FPGA no como una colección de experimentos separados, sino como un ecosistema coherente para construir nuevas máquinas."
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": "Status",
+            "pl": "Status",
+            "de": "Status",
+            "es": "Estado"
+          },
+          "value": {
+            "en": "Active",
+            "pl": "Aktywny",
+            "de": "Aktiv",
+            "es": "Activo"
+          }
+        },
+        {
+          "label": {
+            "en": "Domain",
+            "pl": "Dziedzina",
+            "de": "Bereich",
+            "es": "Área"
+          },
+          "value": {
+            "en": "FPGA / EDA / tools",
+            "pl": "FPGA / EDA / narzędzia",
+            "de": "FPGA / EDA / Werkzeuge",
+            "es": "FPGA / EDA / herramientas"
+          }
+        },
+        {
+          "label": {
+            "en": "Technologies",
+            "pl": "Technologie",
+            "de": "Technologien",
+            "es": "Tecnologías"
+          },
+          "value": "C#, Avalonia, Verilog"
+        }
+      ],
+      "gallery": [],
+      "headingSplit": 3
+    },
+    {
+      "id": "pieceborne",
+      "name": "Pieceborne",
+      "category": "games",
+      "status": {
+        "en": "In production",
+        "pl": "W produkcji",
+        "de": "In Entwicklung",
+        "es": "En producción"
+      },
+      "description": {
+        "en": "A 3D strategy-puzzle game in which a team of pieces explores chambers, solves puzzles and fights its way forward.",
+        "pl": "Strategiczno-logiczna gra 3D, w której drużyna figur przemierza komnaty, rozwiązuje zagadki i walczy o drogę dalej.",
+        "de": "Ein strategisches 3D-Puzzlespiel, in dem ein Team von Figuren Räume erkundet, Rätsel löst und sich den Weg nach vorn erkämpft.",
+        "es": "Un juego 3D de estrategia y puzles en el que un equipo de piezas explora cámaras, resuelve acertijos y lucha para seguir avanzando."
+      },
+      "eyebrow": {
+        "en": "Game · strategy · puzzles",
+        "pl": "Gra · strategia · zagadki",
+        "de": "Spiel · Strategie · Rätsel",
+        "es": "Juego · estrategia · puzles"
+      },
+      "lead": {
+        "en": "A 3D strategy-puzzle adventure in which a team of pieces explores corridors and chambers, activates mechanisms, avoids traps and searches for the exit.",
+        "pl": "Strategiczno-logiczna przygoda 3D, w której drużyna figur przemierza korytarze i komnaty, uruchamia mechanizmy, unika pułapek i szuka drogi do wyjścia.",
+        "de": "Ein strategisches 3D-Puzzleabenteuer, in dem ein Team von Figuren Korridore und Räume erkundet, Mechanismen aktiviert, Fallen meidet und den Ausgang sucht.",
+        "es": "Una aventura 3D de estrategia y puzles en la que un equipo de piezas explora pasillos y cámaras, activa mecanismos, evita trampas y busca la salida."
+      },
+      "metaDescription": {
+        "en": "Pieceborne — a 3D strategy-puzzle game.",
+        "pl": "Pieceborne — strategiczno-logiczna gra 3D.",
+        "de": "Pieceborne — ein strategisches 3D-Puzzlespiel.",
+        "es": "Pieceborne — un juego 3D de estrategia y puzles."
+      },
+      "repository": null,
+      "cover": {
+        "src": "/assets/projects/pieceborne-cover.svg",
+        "alt": {
+          "en": "Stylized Pieceborne game board",
+          "pl": "Stylizowana plansza gry Pieceborne",
+          "de": "Stilisierte Pieceborne-Spielwelt",
+          "es": "Tablero estilizado de Pieceborne"
+        }
+      },
+      "tags": [
+        {
+          "en": "Game",
+          "pl": "Gra",
+          "de": "Spiel",
+          "es": "Juego"
+        },
+        "Godot",
+        "3D",
+        "Steam"
+      ],
+      "sections": [
+        {
+          "title": {
+            "en": "About the game",
+            "pl": "O grze",
+            "de": "Über das Spiel",
+            "es": "Sobre el juego"
+          },
+          "paragraphs": [
+            {
+              "en": "Pieceborne uses the visual clarity of chess pieces, but it is not a digital version of classic chess. Each piece becomes a character with its own role, while the board becomes an adventure space.",
+              "pl": "Pieceborne wykorzystuje czytelność figur szachowych, ale nie jest cyfrową odmianą klasycznych szachów. Każda figura staje się bohaterem o własnej roli, a plansza zmienia się w przestrzeń przygody.",
+              "de": "Pieceborne nutzt die visuelle Klarheit von Schachfiguren, ist aber keine digitale Variante des klassischen Schachs. Jede Figur wird zu einem Charakter mit eigener Rolle, während sich das Brett in einen Abenteuerraum verwandelt.",
+              "es": "Pieceborne utiliza la claridad visual de las piezas de ajedrez, pero no es una versión digital del ajedrez clásico. Cada pieza se convierte en un personaje con su propio papel, mientras que el tablero se transforma en un espacio de aventura."
+            },
+            {
+              "en": "The player leads a team through levels filled with doors, keys, chests, traps, enemies and environmental elements. Planning, cooperation between pieces and proper use of their abilities are essential.",
+              "pl": "Gracz prowadzi drużynę przez poziomy pełne drzwi, kluczy, skrzyń, pułapek, przeciwników i elementów środowiska. Liczy się planowanie kolejnych ruchów, współpraca figur oraz właściwe wykorzystanie ich możliwości.",
+              "de": "Der Spieler führt ein Team durch Level voller Türen, Schlüssel, Truhen, Fallen, Gegner und Umgebungselemente. Entscheidend sind Planung, die Zusammenarbeit der Figuren und der richtige Einsatz ihrer Fähigkeiten.",
+              "es": "El jugador guía a un equipo a través de niveles llenos de puertas, llaves, cofres, trampas, enemigos y elementos del entorno. La planificación, la cooperación entre las piezas y el uso adecuado de sus habilidades son esenciales."
+            }
+          ],
+          "items": []
+        },
+        {
+          "title": {
+            "en": "Key features",
+            "pl": "Najważniejsze elementy",
+            "de": "Wichtigste Merkmale",
+            "es": "Características principales"
+          },
+          "paragraphs": [],
+          "items": [
+            {
+              "en": "a team of different pieces with distinct uses,",
+              "pl": "drużyna różnych figur o odmiennych zastosowaniach,",
+              "de": "ein Team unterschiedlicher Figuren mit eigenen Einsatzmöglichkeiten,",
+              "es": "un equipo de piezas diferentes con funciones propias,"
+            },
+            {
+              "en": "levels built from corridors, chambers and mechanisms,",
+              "pl": "poziomy zbudowane z korytarzy, komnat i mechanizmów,",
+              "de": "Level aus Korridoren, Räumen und Mechanismen,",
+              "es": "niveles construidos con pasillos, cámaras y mecanismos,"
+            },
+            {
+              "en": "environmental puzzles and tactical obstacles,",
+              "pl": "zagadki środowiskowe oraz taktyczne przeszkody,",
+              "de": "Umgebungsrätsel und taktische Hindernisse,",
+              "es": "puzles ambientales y obstáculos tácticos,"
+            },
+            {
+              "en": "keys, doors, chests, traps and patrolling enemies,",
+              "pl": "klucze, drzwi, skrzynie, pułapki i patrolujący przeciwnicy,",
+              "de": "Schlüssel, Türen, Truhen, Fallen und patrouillierende Gegner,",
+              "es": "llaves, puertas, cofres, trampas y enemigos que patrullan,"
+            },
+            {
+              "en": "clear, stylized 3D visuals.",
+              "pl": "czytelna, stylizowana oprawa 3D.",
+              "de": "eine klare, stilisierte 3D-Grafik.",
+              "es": "gráficos 3D claros y estilizados."
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "en": "Goal: a full commercial game released on Steam — without a public source-code repository.",
+        "pl": "Cel: pełnoprawna gra komercyjna wydana na Steam — bez publicznego repozytorium kodu.",
+        "de": "Ziel: ein vollständiges kommerzielles Spiel für Steam — ohne öffentliches Quellcode-Repository.",
+        "es": "Objetivo: un juego comercial completo publicado en Steam, sin un repositorio público de código fuente."
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": "Status",
+            "pl": "Status",
+            "de": "Status",
+            "es": "Estado"
+          },
+          "value": {
+            "en": "In production",
+            "pl": "W produkcji",
+            "de": "In Entwicklung",
+            "es": "En producción"
+          }
+        },
+        {
+          "label": {
+            "en": "Genre",
+            "pl": "Gatunek",
+            "de": "Genre",
+            "es": "Género"
+          },
+          "value": {
+            "en": "Strategy / puzzle / adventure",
+            "pl": "Strategia / puzzle / przygoda",
+            "de": "Strategie / Puzzle / Abenteuer",
+            "es": "Estrategia / puzles / aventura"
+          }
+        },
+        {
+          "label": {
+            "en": "Technology",
+            "pl": "Technologia",
+            "de": "Technologie",
+            "es": "Tecnología"
+          },
+          "value": "Godot 4"
+        },
+        {
+          "label": {
+            "en": "Distribution",
+            "pl": "Dystrybucja",
+            "de": "Vertrieb",
+            "es": "Distribución"
+          },
+          "value": "Steam"
+        }
+      ],
+      "gallery": [],
+      "notice": {
+        "en": "Steam — coming soon",
+        "pl": "Steam — wkrótce",
+        "de": "Steam — demnächst",
+        "es": "Steam — próximamente"
+      },
+      "headingSplit": 5
+    },
+    {
+      "id": "adi",
+      "name": "Adi",
+      "category": "technology",
+      "status": {
+        "en": "Experimental",
+        "pl": "Eksperymentalny",
+        "de": "Experimentell",
+        "es": "Experimental"
+      },
+      "description": {
+        "en": "An experimental FPGA systems laboratory: processors, synthesizers, hardware graphics, displays and device communication.",
+        "pl": "Eksperymentalne laboratorium systemów FPGA: procesory, syntezatory, grafika sprzętowa, wyświetlacze i komunikacja z urządzeniami.",
+        "de": "Ein experimentelles Labor für FPGA-Systeme: Prozessoren, Synthesizer, Hardwaregrafik, Displays und Gerätekommunikation.",
+        "es": "Un laboratorio experimental de sistemas FPGA: procesadores, sintetizadores, gráficos por hardware, pantallas y comunicación con dispositivos."
+      },
+      "eyebrow": {
+        "en": "FPGA · audio · graphics · processors",
+        "pl": "FPGA · audio · grafika · procesory",
+        "de": "FPGA · Audio · Grafik · Prozessoren",
+        "es": "FPGA · audio · gráficos · procesadores"
+      },
+      "lead": {
+        "en": "An experimental FPGA systems laboratory where processors, synthesizers, graphics circuits and hardware interfaces are built.",
+        "pl": "Eksperymentalne laboratorium systemów FPGA, w którym powstają procesory, syntezatory, układy graficzne i interfejsy sprzętowe.",
+        "de": "Ein experimentelles Labor für FPGA-Systeme, in dem Prozessoren, Synthesizer, Grafikschaltungen und Hardwareschnittstellen entstehen.",
+        "es": "Un laboratorio experimental de sistemas FPGA donde se construyen procesadores, sintetizadores, circuitos gráficos e interfaces de hardware."
+      },
+      "metaDescription": {
+        "en": "Adi — the Logos7 experimental FPGA systems laboratory.",
+        "pl": "Adi — eksperymentalne laboratorium systemów FPGA Logos7.",
+        "de": "Adi — das experimentelle FPGA-Systemlabor von Logos7.",
+        "es": "Adi — el laboratorio experimental de sistemas FPGA de Logos7."
+      },
+      "repository": "https://github.com/Logos7/Adi",
+      "cover": null,
+      "tags": [
+        "FPGA",
+        "Verilog",
+        "Audio",
+        "Graphics"
+      ],
+      "sections": [
+        {
+          "title": {
+            "en": "What is it?",
+            "pl": "Co to jest?",
+            "de": "Was ist das?",
+            "es": "¿Qué es?"
+          },
+          "paragraphs": [
+            {
+              "en": "Adi is a collection of working hardware experiments developed directly on FPGA boards. It is used to test ideas, build small machines and learn hardware from the inside.",
+              "pl": "Adi jest zbiorem działających eksperymentów sprzętowych rozwijanych bezpośrednio na płytkach FPGA. Projekt służy do sprawdzania pomysłów, budowania małych maszyn i poznawania sprzętu od środka.",
+              "de": "Adi ist eine Sammlung funktionierender Hardwareexperimente, die direkt auf FPGA-Boards entwickelt werden. Das Projekt dient dazu, Ideen zu testen, kleine Maschinen zu bauen und Hardware von innen kennenzulernen.",
+              "es": "Adi es una colección de experimentos de hardware funcionales desarrollados directamente sobre placas FPGA. Sirve para probar ideas, construir pequeñas máquinas y aprender cómo funciona el hardware desde dentro."
+            }
+          ],
+          "items": []
+        },
+        {
+          "title": {
+            "en": "Areas of experimentation",
+            "pl": "Obszary eksperymentów",
+            "de": "Experimentierbereiche",
+            "es": "Áreas de experimentación"
+          },
+          "paragraphs": [],
+          "items": [
+            {
+              "en": "programmable processors and custom instructions,",
+              "pl": "programowalne procesory i własne instrukcje,",
+              "de": "programmierbare Prozessoren und eigene Instruktionen,",
+              "es": "procesadores programables e instrucciones personalizadas,"
+            },
+            {
+              "en": "sound synthesis, DDS, ADSR and hardware mixers,",
+              "pl": "synteza dźwięku, DDS, ADSR i miksery sprzętowe,",
+              "de": "Klangsynthese, DDS, ADSR und Hardwaremischer,",
+              "es": "síntesis de sonido, DDS, ADSR y mezcladores por hardware,"
+            },
+            {
+              "en": "graphics generated directly in FPGA,",
+              "pl": "grafika generowana bezpośrednio w FPGA,",
+              "de": "direkt im FPGA erzeugte Grafik,",
+              "es": "gráficos generados directamente en FPGA,"
+            },
+            {
+              "en": "SPI displays, UART and PMOD modules,",
+              "pl": "wyświetlacze SPI, UART i moduły PMOD,",
+              "de": "SPI-Displays, UART und PMOD-Module,",
+              "es": "pantallas SPI, UART y módulos PMOD,"
+            },
+            {
+              "en": "ray tracing and specialized computing circuits.",
+              "pl": "ray tracing i wyspecjalizowane układy obliczeniowe.",
+              "de": "Raytracing und spezialisierte Rechenschaltungen.",
+              "es": "trazado de rayos y circuitos de cálculo especializados."
+            }
+          ]
+        }
+      ],
+      "callout": {
+        "en": "Project role: rapid experimentation and preserving working circuits as a foundation for future systems.",
+        "pl": "Rola projektu: szybkie eksperymentowanie i zachowywanie działających układów jako bazy dla kolejnych systemów.",
+        "de": "Projektrolle: schnelles Experimentieren und das Bewahren funktionierender Schaltungen als Grundlage für künftige Systeme.",
+        "es": "Función del proyecto: experimentación rápida y conservación de circuitos funcionales como base para sistemas futuros."
+      },
+      "metadata": [
+        {
+          "label": {
+            "en": "Status",
+            "pl": "Status",
+            "de": "Status",
+            "es": "Estado"
+          },
+          "value": {
+            "en": "Experimental",
+            "pl": "Eksperymentalny",
+            "de": "Experimentell",
+            "es": "Experimental"
+          }
+        },
+        {
+          "label": {
+            "en": "Domain",
+            "pl": "Dziedzina",
+            "de": "Bereich",
+            "es": "Área"
+          },
+          "value": {
+            "en": "FPGA / embedded / hardware",
+            "pl": "FPGA / embedded / hardware",
+            "de": "FPGA / Embedded / Hardware",
+            "es": "FPGA / embebidos / hardware"
+          }
+        },
+        {
+          "label": {
+            "en": "Technologies",
+            "pl": "Technologie",
+            "de": "Technologien",
+            "es": "Tecnologías"
+          },
+          "value": {
+            "en": "Verilog, C#, Gowin",
+            "pl": "Verilog, C#, Gowin",
+            "de": "Verilog, C#, Gowin",
+            "es": "Verilog, C#, Gowin"
+          }
+        }
+      ],
+      "gallery": [],
+      "headingSplit": 1
+    }
+  ]
+}

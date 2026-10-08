@@ -34,67 +34,34 @@
 <div class="container">
 <div aria-label="Project filters" class="filter-row reveal" data-i18n-attr="aria-label:projects.filtersLabel">
 <button aria-pressed="true" class="filter-chip is-active" data-i18n="projects.filterAll" data-project-filter="all" type="button">All</button>
-<button aria-pressed="false" class="filter-chip" data-i18n="projects.filterTechnology" data-project-filter="technology" type="button">Code and hardware</button>
-<button aria-pressed="false" class="filter-chip" data-i18n="projects.filterGames" data-project-filter="games" type="button">Games</button>
+<button aria-pressed="false" class="filter-chip" data-project-filter="technology" type="button" data-i18n="catalog.category.technology">Code and hardware</button>
+<button aria-pressed="false" class="filter-chip" data-project-filter="games" type="button" data-i18n="catalog.category.games">Games</button>
 </div>
 <div class="projects-grid" data-projects-grid="">
 <article class="project-card reveal" data-project-category="technology">
-<a class="project-card-media" href="/projects/yantra/">
-<img alt="Abstract visualization of the Yantra project" data-i18n-attr="alt:projects.yantraAlt" src="/assets/projects/yantra-cover.svg"/>
-</a>
+<a class="project-card-media" href="/projects/yantra/" aria-label="Yantra"><img src="/assets/projects/yantra-cover.svg" alt="Abstract visualization of the Yantra system" data-i18n-attr="alt:catalog.yantra.cover.alt"/></a>
 <div class="project-card-body">
-<span class="status" data-i18n="projects.yantraStatus">Active project</span>
-<div class="project-card-titlebar">
-<h3><a href="/projects/yantra/">Yantra</a></h3>
-<a class="project-card-repository" href="https://github.com/Logos7/Yantra" rel="noreferrer" target="_blank">GitHub ↗</a>
-</div>
-<p data-i18n="projects.yantraDescription">A modular, high-level platform for building FPGA systems from blocks and deploying them to different targets.</p>
-<div class="tags">
-<span class="tag">FPGA</span>
-<span class="tag">C#</span>
-<span class="tag">Avalonia</span>
-<span class="tag">Verilog</span>
-</div>
-</div>
-</article>
+<span class="status" data-i18n="catalog.yantra.status">Active project</span>
+<div class="project-card-titlebar"><h3><a href="/projects/yantra/">Yantra</a></h3><a class="project-card-repository" href="https://github.com/Logos7/Yantra" rel="noreferrer" target="_blank">GitHub ↗</a></div>
+<p data-i18n="catalog.yantra.description">A modular, high-level platform for building FPGA systems from blocks and deploying them to different targets.</p>
+<div class="tags"><span class="tag">FPGA</span><span class="tag">C#</span><span class="tag">Avalonia</span><span class="tag">Verilog</span></div>
+</div></article>
 <article class="project-card reveal" data-project-category="games">
-<a class="project-card-media" href="/projects/pieceborne/">
-<img alt="Stylized Pieceborne game board" data-i18n-attr="alt:projects.pieceborneAlt" src="/assets/projects/pieceborne-cover.svg"/>
-</a>
+<a class="project-card-media" href="/projects/pieceborne/" aria-label="Pieceborne"><img src="/assets/projects/pieceborne-cover.svg" alt="Stylized Pieceborne game board" data-i18n-attr="alt:catalog.pieceborne.cover.alt"/></a>
 <div class="project-card-body">
-<span class="status" data-i18n="projects.pieceborneStatus">In production</span>
-<div class="project-card-titlebar">
-<h3><a href="/projects/pieceborne/">Pieceborne</a></h3>
-<span class="project-card-repository project-card-repository-private" data-i18n="projects.privateRepository">Private repository</span>
-</div>
-<p data-i18n="projects.pieceborneDescription">A 3D strategy-puzzle game in which a team of pieces explores chambers, solves puzzles and fights its way forward.</p>
-<div class="tags">
-<span class="tag" data-i18n="projects.gameTag">Game</span>
-<span class="tag">Godot</span>
-<span class="tag">3D</span>
-<span class="tag">Steam</span>
-</div>
-</div>
-</article>
+<span class="status" data-i18n="catalog.pieceborne.status">In production</span>
+<div class="project-card-titlebar"><h3><a href="/projects/pieceborne/">Pieceborne</a></h3></div>
+<p data-i18n="catalog.pieceborne.description">A 3D strategy-puzzle game in which a team of pieces explores chambers, solves puzzles and fights its way forward.</p>
+<div class="tags"><span class="tag" data-i18n="catalog.pieceborne.tag.0">Game</span><span class="tag">Godot</span><span class="tag">3D</span><span class="tag">Steam</span></div>
+</div></article>
 <article class="project-card reveal" data-project-category="technology">
-<a aria-label="Adi — experimental FPGA systems" class="project-card-media project-card-art project-card-art-adi" data-i18n-attr="aria-label:projects.adiAria" href="/projects/adi/">
-<span aria-hidden="true"></span>
-</a>
+<a class="project-card-media project-card-art" href="/projects/adi/" aria-label="Adi"><span aria-hidden="true"></span></a>
 <div class="project-card-body">
-<span class="status status-experimental" data-i18n="projects.adiStatus">Experimental</span>
-<div class="project-card-titlebar">
-<h3><a href="/projects/adi/">Adi</a></h3>
-<a class="project-card-repository" href="https://github.com/Logos7/Adi" rel="noreferrer" target="_blank">GitHub ↗</a>
-</div>
-<p data-i18n="projects.adiDescription">An experimental FPGA systems laboratory: processors, synthesizers, hardware graphics, displays and device communication.</p>
-<div class="tags">
-<span class="tag">FPGA</span>
-<span class="tag">Verilog</span>
-<span class="tag">Audio</span>
-<span class="tag">Graphics</span>
-</div>
-</div>
-</article>
+<span class="status" data-i18n="catalog.adi.status">Experimental</span>
+<div class="project-card-titlebar"><h3><a href="/projects/adi/">Adi</a></h3><a class="project-card-repository" href="https://github.com/Logos7/Adi" rel="noreferrer" target="_blank">GitHub ↗</a></div>
+<p data-i18n="catalog.adi.description">An experimental FPGA systems laboratory: processors, synthesizers, hardware graphics, displays and device communication.</p>
+<div class="tags"><span class="tag">FPGA</span><span class="tag">Verilog</span><span class="tag">Audio</span><span class="tag">Graphics</span></div>
+</div></article>
 </div>
 <p class="projects-empty" data-i18n="projects.empty" data-projects-empty="" hidden="">No published projects in this category yet.</p>
 </div>
@@ -115,6 +82,7 @@
 <script src="/assets/i18n/pl.js"></script>
 <script src="/assets/i18n/de.js"></script>
 <script src="/assets/i18n/es.js"></script>
+<script src="/assets/js/project-translations.js"></script>
 <script src="/assets/js/site.js"></script>
 </body>
 </html>

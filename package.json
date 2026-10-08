@@ -1,0 +1,10 @@
+{
+  "name": "logos7-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-projects.mjs",
+    "check": "node scripts/build-projects.mjs --check"
+  },
+  "engines": { "node": ">=18" }
+}
