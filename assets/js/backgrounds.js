@@ -52,11 +52,11 @@
   writeSession(scenePathKey, window.location.pathname);
 
   const palettes = {
-    home: [[126, 224, 175], [163, 145, 255], [240, 198, 111]],
-    projects: [[127, 216, 255], [163, 145, 255], [240, 198, 111]],
-    yantra: [[126, 224, 175], [127, 216, 255], [240, 198, 111]],
-    adi: [[127, 216, 255], [163, 145, 255], [126, 224, 175]],
-    pieceborne: [[240, 198, 111], [196, 104, 70], [163, 145, 255]]
+    home: [[45, 240, 145], [150, 90, 255], [255, 190, 55]],
+    projects: [[40, 205, 255], [150, 90, 255], [255, 190, 55]],
+    yantra: [[45, 240, 145], [40, 205, 255], [255, 190, 55]],
+    adi: [[40, 205, 255], [150, 90, 255], [45, 240, 145]],
+    pieceborne: [[255, 190, 55], [235, 100, 45], [150, 90, 255]]
   };
 
   const paletteName = document.body.dataset.backgroundPalette || "home";
@@ -81,7 +81,7 @@
   };
   let animationFrame = 0;
 
-  const rgba = (color, alpha) => `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${alpha})`;
+  const rgba = (color, alpha) => `rgba(${color[0]}, ${color[1]}, ${color[2]}, ${Math.min(1, alpha * 1.4)})`;
   const mix = (a, b, amount) => a + (b - a) * amount;
   const random = (min, max) => min + Math.random() * (max - min);
   const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
